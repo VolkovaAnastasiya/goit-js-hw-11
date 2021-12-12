@@ -24,7 +24,7 @@ export default class NewApiService {
       const response = await axios(axiosOptions);
 
       const data = response.data;
-      console.log(data);
+
       this.page += 1;
       return data;
     } catch (error) {
